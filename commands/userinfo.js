@@ -12,7 +12,5 @@ exports.run = (Bot, message, args) => {
   .addField("Is Bot", userMentioned.bot)
   .addField("Joined Server On", message.guild.joinedAt)
   .addField("Joined Discord on", userMentioned.createdAt);
-
-//await message.channel.sendEmbed(embed);
-awaitMsg.delete();
+  message.channel.send(embed)
 }
